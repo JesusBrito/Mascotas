@@ -18,9 +18,9 @@
 			<td>{{ mascota.id }}</td>
 			<td>{{ mascota.nombre }}</td>
 			<td>{{ mascota.sexo }}</td>
-			<td>{{ mascota.edad }}</td>
-			<td>{{ mascota.fecha_rescate }}</td>
-			<td>{{ mascota.persona.nombre }}{{ mascota.persona.apellidos }}</td>
+			<td>{{ mascota.edad_aprox }}</td>
+			<td>{{ mascota.fecha_res }}</td>
+			<td>{{ mascota.persona.nombre }} {{ mascota.persona.apellidoPat }} {{ mascota.persona.apellidoMat }}</td>
 		</tr>
 		{% endfor %}
 		{% else %}
