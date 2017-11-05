@@ -3,7 +3,7 @@
 {% block content %}
 <form method="POST">
 	{% csrf_token %}
-	<h3>¿Desea eliminar el registro de{{mascota.nombre}}?</h3>
+	<h3>¿Desea eliminar el registro de{{Oject.nombre}}?</h3>
 	<button class="btn btn-danger" type="submit">Eliminar</button>
 	<a class="btn btn-default" href="{% url 'mascota:mascota_listar'%}">Cancelar</a>
 </form>
